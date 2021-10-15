@@ -4,11 +4,9 @@ spring:
   jms:
     servicebus:
       connection-string: ${AZURE-URL-SENDER}
-      topic-client-id: taka2-service
       idle-timeout: 20000
       pricing-tier: basic
     listener:
       connection-string: ${AZURE-URL-LISTENER}
-      topic-client-id: taka2-service
-      idle-timeout:: 20000
+      idle-timeout: 20000
       pricing-tier: basic
